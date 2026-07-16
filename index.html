@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevsite Games</title>
+<meta name="description" content="Indie games and apps by Kevin Cabilla — arcade, puzzle, and strategy titles for Android.">
+<style>
+  :root {
+    --bg: #0b0d14;
+    --bg-alt: #12151f;
+    --card: #171b28;
+    --border: #262c3d;
+    --text: #e8eaf2;
+    --text-dim: #9aa0b4;
+    --accent: #5eead4;
+    --accent2: #a78bfa;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(1200px 600px at 50% -10%, #1a2035 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  header {
+    padding: 80px 24px 48px;
+    text-align: center;
+  }
+  .logo {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 12px;
+  }
+  header p {
+    color: var(--text-dim);
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+  }
+  .contact-links {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .contact-links a {
+    border: 1px solid var(--border);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    transition: all 0.2s ease;
+  }
+  .contact-links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 24px 80px;
+  }
+  .section-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin: 48px 0 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent2);
+  }
+  .card .icon {
+    font-size: 1.8rem;
+  }
+  .card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .card p {
+    margin: 0;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+    flex-grow: 1;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: var(--accent);
+    border: 1px solid rgba(94, 234, 212, 0.3);
+    background: rgba(94, 234, 212, 0.06);
+    padding: 3px 10px;
+    border-radius: 999px;
+    width: fit-content;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px 48px;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="logo">Kevsite Games</h1>
+  <p>Indie developer building arcade, puzzle, and strategy games for Android — solo, from scratch, ship-focused.</p>
+  <div class="contact-links">
+    <a href="mailto:krgcabilla@gmail.com">Email</a>
+    <a href="https://github.com/kevray8" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">Games &amp; Apps</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="icon">🔑</div>
+      <h3>Master Coder</h3>
+      <p>A Mastermind-style code-breaking puzzle game with four difficulties, daily challenges, and achievements.</p>
+      <span class="tag">Capacitor · Puzzle</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚢</div>
+      <h3>Ocean Vanguard: Battleships</h3>
+      <p>Classic naval strategy battleships, rebuilt for mobile with a polished combat loop.</p>
+      <span class="tag">Cordova · Strategy</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚗</div>
+      <h3>Highway Runner</h3>
+      <p>Fast, reflex-driven arcade racing game built with React Native / Expo.</p>
+      <span class="tag">Expo · Arcade</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🧱</div>
+      <h3>Puzzle Blocks 3D</h3>
+      <p>A block-fitting puzzle game with a clean, tactile HTML5 canvas presentation.</p>
+      <span class="tag">HTML5 · Puzzle</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏛️</div>
+      <h3>Hidden Ruins</h3>
+      <p>A procedurally-generated maze-escape adventure full of traps, powerups, and fog of war.</p>
+      <span class="tag">Phaser 3 · Adventure</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">☄️</div>
+      <h3>Meteor Escape</h3>
+      <p>An arcade dodging game with 10 unlockable ships, achievements, and a competitive leaderboard.</p>
+      <span class="tag">HTML5 Canvas · Arcade</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Budget Tracker</h3>
+      <p>A personal finance tracking app built for Android with a clean, simple interface.</p>
+      <span class="tag">React Native · Utility</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎯</div>
+      <h3>Attanks: Warfare</h3>
+      <p>An Android arcade tank battle game with destructible battlefields and fast-paced combat.</p>
+      <span class="tag">Godot · Android</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚔️</div>
+      <h3>Battle Legends: Omega Warfare</h3>
+      <p>An action-packed battle strategy game with escalating warfare mechanics.</p>
+      <span class="tag">Strategy</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">📜</div>
+      <h3>RPG Script Writer</h3>
+      <p>An offline script-writing tool for RPG creators to draft and organize game dialogue.</p>
+      <span class="tag">Next.js · Capacitor · Tool</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🧩</div>
+      <h3>Secret Puzzle</h3>
+      <p>A brain-teasing puzzle game focused on hidden clues and logic challenges.</p>
+      <span class="tag">Puzzle</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌲</div>
+      <h3>Secret Ruins: Forest Version</h3>
+      <p>An exploration adventure through ancient ruins hidden deep in a mysterious forest.</p>
+      <span class="tag">Adventure</span>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎖️</div>
+      <h3>Tactics of the Generals</h3>
+      <p>A turn-based tactics and strategy game commanding armies across the battlefield.</p>
+      <span class="tag">Strategy</span>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Kevsite Games. All rights reserved.
+</footer>
+
+</body>
+</html>
